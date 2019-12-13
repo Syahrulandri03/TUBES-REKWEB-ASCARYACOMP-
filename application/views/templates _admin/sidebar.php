@@ -11,7 +11,7 @@
         <div class="sidebar-brand-icon">
           <i class="fas fa-store-alt"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">ASCARYACOMP</div>
+        <div class="sidebar-brand-text mx-3">ADMIN</div>
       </a>
 
       <!-- Divider -->
@@ -23,98 +23,17 @@
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Etalase
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProcessor" aria-expanded="true" aria-controls="collapseProcessor">
-          <span>Processor</span>
-        </a>
-        <div id="collapseProcessor" class="collapse" aria-labelledby="headingProcessor" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">AMD</a>
-            <a class="collapse-item" href="cards.html">INTEL</a>
-          </div>
-        </div>
-      </li>
-
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMotherboard" aria-expanded="true" aria-controls="collapseMotherboard">
-          <span>Motherboard</span>
-        </a>
-        <div id="collapseMotherboard" class="collapse" aria-labelledby="headingMotherboard" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">AMD</a>
-            <a class="collapse-item" href="cards.html">INTEL</a>
-          </div>
-        </div>
-      </li>
-
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMemory" aria-expanded="true" aria-controls="collapseMemory">
-          <span>Memory Ram</span>
-        </a>
-        <div id="collapseMemory" class="collapse" aria-labelledby="headingMemory" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">DDR3</a>
-            <a class="collapse-item" href="cards.html">DDR4</a>
-          </div>
-        </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVga" aria-expanded="true" aria-controls="collapseVga">
-          <span>VGA Card</span>
-        </a>
-        <div id="collapseVga" class="collapse" aria-labelledby="headingVga" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">AMD</a>
-            <a class="collapse-item" href="cards.html">Intel</a>
-          </div>
-        </div>
-      </li>
-
-
      
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
-          <span>SSD</span></a>
+          <span>Etalase</span></a>
       </li>
 
        <li class="nav-item">
         <a class="nav-link" href="tables.html">
-          <span>HDD</span></a>
+          <span>Invoice</span></a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <span>PSU</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <span>Fan Case</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <span>CPU Cooler</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <span>Monitor Gaming</span></a>
-      </li>
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
 
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
