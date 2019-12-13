@@ -1,7 +1,6 @@
 <?php  
 
-		
-		class etalase extends CI_Controller(){
+		class etalase extends CI_Controller{
 			public function index(){
 
 				$this->load->view('templates_admin/header');
