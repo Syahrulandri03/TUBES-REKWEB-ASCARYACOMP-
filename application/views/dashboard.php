@@ -14,9 +14,11 @@
       <?php foreach ($etalase as $etl)  : ?>
 
         <div class="card ml-3 mb-3" style="width: 16rem;">
-            <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top" alt="...">
-                <div class="card-body">
 
+          
+                <div class="card-body">
+                    <span class="badge badge-secondary">New</span>
+                    <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top" alt="...">
                     <h5 class="card-title mb-1"><?php echo $etl->nama_barang ?></h5>
                     <!--  <small>Deskripsi :</small><br><br>
                     <small><?php echo $etl->deskripsi ?></small><br><br> -->
