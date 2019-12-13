@@ -2,7 +2,10 @@
 
 		class dashboard_admin extends CI_Controller{
 
-			
+			public functiion index(){
+
+				$this->load->view('admin/dashboard');
+			}
 		}
 
 
