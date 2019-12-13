@@ -19,19 +19,18 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+        <a class="nav-link" href="<?php echo base_url('admin/dashboard_admin') ?>">
+          <span>DASHBOARD</span></a>
       </li>
      
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('admin/etalase') ?>">
           <span>Etalase</span></a>
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url('admin/invoice') ?>">
           <span>Invoice</span></a>
       </li>
 
