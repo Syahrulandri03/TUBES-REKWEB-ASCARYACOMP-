@@ -4,6 +4,9 @@
 
 			public functiion index(){
 
+				$this->load->view('templates_admin/header');
+				$this->load->view('templates_admin/sidebar');
+				$this->load->view('templates_admin/footer');
 				$this->load->view('admin/dashboard');
 			}
 		}
