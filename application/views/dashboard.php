@@ -1,9 +1,19 @@
 <div class="container-fluid">
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-ride="carousel">
+    <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="<?php echo base_url('assets/img/ascaryacomSlider.jpg')  ?>" class="d-block w-100" alt="...">
+            </div>
+    </div>
+  </div>
+
+
   <div class="row">
     
       <?php foreach ($etalase as $etl)  : ?>
 
-        <div class="card" style="width: 16rem;">
+        <div class="card ml-3 mb-3" style="width: 16rem;">
             <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top" alt="...">
                 <div class="card-body">
 
