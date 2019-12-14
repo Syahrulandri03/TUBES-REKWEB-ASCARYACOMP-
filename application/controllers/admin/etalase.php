@@ -24,7 +24,7 @@
 							$config['upload_path'] = './uploads';
 							$config['allowed_types'] = 'jpg|jpeg|png';
 
-							$this->load->library('upload', config);
+							$this->load->library('upload', $config);
 							
 								if (!$this->upload->do_upload('gambar')) {
 									
@@ -33,6 +33,7 @@
 								}else{
 
 									$gambar = $this->upload->data('file_name');
+									echo "Produk Baru Telah Ditambahkan!";
 
 								}
 					}

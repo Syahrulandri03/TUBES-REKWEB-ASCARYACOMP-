@@ -75,7 +75,7 @@
         <div id="collapseVga" class="collapse" aria-labelledby="headingVga" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="buttons.html">AMD</a>
-            <a class="collapse-item" href="cards.html">Intel</a>
+            <a class="collapse-item" href="cards.html">Nvdia</a>
           </div>
         </div>
       </li>
