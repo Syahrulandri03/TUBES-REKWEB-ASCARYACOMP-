@@ -1,22 +1,23 @@
 <div class="container-fluid">
 	
-	<button class="btn btn-sm btn-primary mb-3"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
+	<button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambahProduk"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
 
-	<table class="table table-bordered mb-5">
-		
-		<tr>
+	 <table class="table table-bordered mb-5">
+		<thead class="thead-dark text-center">
+			<tr>
+				
+				<th>No</th>
+				<th>Gambar</th>
+				<th>Nama Produk</th>
+				<th>Deskripsi</th>
+				<th>Kategori</th>
+				<th>Harga</th>
+				<th>Jumlah Stok</th>
+				<th colspan="3">Aksi</th>
+
+			</tr>
+		</thead>
 			
-			<th>No</th>
-			<th>Gambar</th>
-			<th>Nama Produk</th>
-			<th>Deskripsi</th>
-			<th>Kategori</th>
-			<th>Harga</th>
-			<th>Jumlah Stok</th>
-			<th colspan="3">Aksi</th>
-
-		</tr>
-
 		<?php $no=1; foreach ($etalase as $etl) : ?>
 
 				<tr>
@@ -35,6 +36,104 @@
 				</tr>
 
 		<?php  endforeach; ?>
-	</table>
+	</table> 
+<!-- 
+	 <div class="row mb-3">
+    
+      <?php foreach ($etalase as $etl)  : ?>
+
+        <div class="card ml-3 mb-3" style="width: 16rem;">
+
+          
+                <div class="card-body">
+                    <span class="badge badge-secondary">New</span>
+                    <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top" alt="...">
+                    <h5 class="card-title mb-1"><?php echo $etl->nama_barang ?></h5>
+                    <small>Deskripsi :</small><br>
+                    <small><?php echo $etl->deskripsi ?></small><br><br>
+                    <small>Kategori :</small><br>
+                    <small><?php echo $etl->kategori ?></small><br><br>
+                    <small>Harga :</small><br>
+                    <span>Rp <?php echo $etl->harga ?></span><br><br>
+                    <button type="button" class="btn btn-sm btn-primary">Edit</button>
+                    <td><button type="button" class="btn btn-sm btn-danger">Hapus</button></td>
+                    <button type="button" class="btn btn-link">Detail</button>
+
+
+            </div>
+            </div>
+      <?php endforeach; ?>
+  </div> -->
 
 </div>
+
+<!-- Modal -->
+	<div class="modal fade" id="tambahProduk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+
+				        	<h5 class="modal-title" id="tambahProdukTitle">Tambah Produk</h5>
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          	<span aria-hidden="true">&times;</span>
+
+			        </button>
+			      </div>
+			      <div class="modal-body">
+
+					     <form action="<?php echo base_url(). 'admin/etalase/tambah_produk' ?>" method="post" enctype="multipart/form-data">
+					     		
+								<div class="form-grpup">
+					     			
+					     			<label>Gambar</label><br>
+					     			<input type="file" name="gambar" class=""><br><br>
+					     		</div>
+					     	
+					     		<div class="form-grpup">
+					     			
+					     			<label>Nama Barang</label>
+
+
+					     			<input type="text" name="nama_barang" class="form-control">
+
+					     		</div>
+
+					     		<div class="form-grpup">
+					     			
+					     			<label>Deskripsi</label>
+					     			<input type="text" name="deskripsi" class="form-control">
+
+					     		</div>
+
+					     		<div class="form-grpup">
+					     			
+					     			<label>Kategori</label>
+					     			<input type="text" name="kategori" class="form-control">
+
+					     		</div>
+
+					     		<div class="form-grpup">
+					     			
+					     			<label>Harga</label>
+					     			<input type="text" name="harga" class="form-control">
+
+					     		</div>
+
+					     		<div class="form-grpup">
+					     			
+					     			<label>Jumlah Stok</label>
+					     			<input type="text" name="jumlah_stok" class="form-control">
+
+					     		</div>
+
+					     </form>
+
+			      </div>
+			      <div class="modal-footer">
+
+			        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        		<button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+	  </div>
+	</div>
