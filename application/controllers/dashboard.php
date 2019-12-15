@@ -19,7 +19,7 @@
 
 			$data = array(
 
-					'id'		=> $etalase->id_barang;
+					'id'		=> $etalase->id_barang,
 					'qty'		=> 1,
 					'price'		=> $etalase->harga,
 					'name'		=> $barang->nama_barang
