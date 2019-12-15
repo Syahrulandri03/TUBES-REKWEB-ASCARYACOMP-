@@ -75,6 +75,7 @@
 					$harga				= $this->input->post('harga');
 					$jumlah_stok		= $this->input->post('jumlah_stok');
 
+
 					$data = array(
 
 
@@ -96,6 +97,13 @@
 					redirect('admin/etalase/index');
 			}
 
+			public function hapus_produk($id){
+
+					$where = array('id_barang' =>$id);
+					$this->model_etalase->hapus_produk($where, 'etalase');
+					redirect('admin/etalase/index');
+
+			}
 
 		}
 

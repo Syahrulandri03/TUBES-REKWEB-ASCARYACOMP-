@@ -10,8 +10,7 @@
 								<div class="form-group">
 					     			
 					     			<label>Gambar</label><br>
-					     			<input type="file" name="gambar" class="form-control-file"value="<?php echo $etl->gambar?>" >
-
+					     			<input type="file" name="gambar" class="form-control-file"><?php echo $etl->gambar?>
 					     		</div>
 					     	
 					     		<div class="form-group">
@@ -25,7 +24,7 @@
 					     			
 					     			<label>Deskripsi</label>
 					     			<input type="hidden" name="id_barang" class="form-control" value="<?php echo $etl->id_barang ?>">
-					     			<textarea type="text" name="deskripsi" class="form-control" rows="10"><?php echo $etl->deskripsi ?></textarea>
+					     			<textarea type="text" name="deskripsi" class="form-control" rows="5"><?php echo $etl->deskripsi ?></textarea>
 
 					     		</div>
 

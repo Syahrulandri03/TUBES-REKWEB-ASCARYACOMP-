@@ -27,5 +27,12 @@
 				$this->db->update($table, $data);
 			}
 
+			public function hapus_produk($where, $table){
+
+				$this->db->where($where);
+				$this->db->delete($table);
+			}
+
+
 
 		}

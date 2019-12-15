@@ -101,7 +101,7 @@
 					     			
 					     			<label>Deskripsi</label>
 					     			<!-- <input type="text" name="deskripsi" class="form-control"> -->
-					     		<textarea type="text" name="deskripsi" class="form-control" rows="10"></textarea>  
+					     		<textarea type="text" name="deskripsi" class="form-control"></textarea>  
 
 					     		</div>
 
