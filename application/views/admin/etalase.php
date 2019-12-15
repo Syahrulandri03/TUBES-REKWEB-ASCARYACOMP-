@@ -31,8 +31,8 @@
 					<td> <?php  echo $etl->jumlah_stok  ?> </td>
 					<td><?php echo anchor('admin/etalase/edit_produk/' . $etl->id_barang, '<button type="button" class="btn btn-sm btn-secondary">Edit</button>') ?></td>
 					<td><?php echo anchor('admin/etalase/hapus_produk/' . $etl->id_barang, '<button type="button" class="btn btn-sm btn-danger">Hapus</button>') ?></td>
-					<td><button type="button" class="btn btn-link text-dark">Detail</button></td>
-
+					<!-- <td><button type="button" class="btn btn-link text-dark">Detail</button></td>
+ -->
 				</tr>
 
 		<?php  endforeach; ?>

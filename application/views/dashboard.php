@@ -18,11 +18,11 @@
                 <div class="card-body text-dark">
                     <span class="badge">New In Box</span>
                     <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top mb-3" alt="...">
-                    <h6 class="card-title mb-1"><?php echo $etl->nama_barang ?></h6>
+                    <h6 class="card-title mb-1"><?php echo $etl->nama_barang ?></h6><br>
                     <!--  <small>Deskripsi :</small><br><br>
                     <small><?php echo $etl->deskripsi ?></small><br><br> -->
-                    <span>Rp <?php echo $etl->harga ?></span><br><br>
-                    <button type="button" class="btn btn-danger">Beli</button>
+                    <span class="text-danger">Rp <?php echo $etl->harga ?></span><br><br>
+                    <?php echo anchor('dashboard/keranjang/'. $etl->id_barang, '<button type="button" class="btn btn-danger">Beli</button>') ?>
                     <button type="button" class="btn btn-link text-dark">Detail</button>
 
 
