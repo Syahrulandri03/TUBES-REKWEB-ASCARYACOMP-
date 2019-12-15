@@ -1,9 +1,9 @@
 <div class="container-fluid">
 	
-	<button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambahProduk"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
+	<button class="btn btn-sm btn-danger mb-3" data-toggle="modal" data-target="#tambahProduk"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
 
 	 <table class="table table-bordered mb-5">
-		<thead class="thead-dark text-center">
+		<thead class="thead-light text-center">
 			<tr>
 				
 				<th>No</th>
@@ -29,9 +29,9 @@
 					<td> <?php  echo $etl->kategori  ?> </td>
 					<td> <?php  echo $etl->harga  ?> </td>
 					<td> <?php  echo $etl->jumlah_stok  ?> </td>
-					<td><button type="button" class="btn btn-sm btn-primary">Edit</button></td>
-					<td><button type="button" class="btn btn-sm btn-danger">Hapus</button></td>
-					<td><button type="button" class="btn btn-link">Detail</button></td>
+					<td><?php echo anchor('admin/etalase/edit_produk/' . $etl->id_barang, '<button type="button" class="btn btn-sm btn-secondary">Edit</button>') ?></td>
+					<td><?php echo anchor('admin/etalase/hapus_produk/' . $etl->id_barang, '<button type="button" class="btn btn-sm btn-danger">Hapus</button>') ?></td>
+					<td><button type="button" class="btn btn-link text-dark">Detail</button></td>
 
 				</tr>
 
@@ -69,11 +69,11 @@
 
 <!-- Modal -->
 	<div class="modal fade" id="tambahProduk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
+	  <div class="modal-dialog modal-dialog-scrollable" role="document">
+			    <div class="modal-content text-dark">
 			      <div class="modal-header">
 
-				        	<h5 class="modal-title" id="tambahProdukTitle">Tambah Produk</h5>
+				        	<h5 class="modal-title text-danger" id="tambahProdukTitle">Tambah Produk</h5>
 				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          	<span aria-hidden="true">&times;</span>
 
@@ -83,43 +83,43 @@
 
 					     <form action="<?php echo base_url(). 'admin/etalase/tambah_produk' ?>" method="post" enctype="multipart/form-data">
 					     		
-								<div class="form-grpup">
+								<div class="form-group">
 					     			
 					     			<label>Gambar</label><br>
-					     			<input type="file" name="gambar" class=""><br><br>
+					     			<input type="file" name="gambar"class="form-control-file">
+
 					     		</div>
 					     	
-					     		<div class="form-grpup">
+					     		<div class="form-group">
 					     			
 					     			<label>Nama Barang</label>
-
-
 					     			<input type="text" name="nama_barang" class="form-control">
 
 					     		</div>
 
-					     		<div class="form-grpup">
+					     		<div class="form-group">
 					     			
 					     			<label>Deskripsi</label>
-					     			<input type="text" name="deskripsi" class="form-control">
+					     			<!-- <input type="text" name="deskripsi" class="form-control"> -->
+					     		<textarea type="text" name="deskripsi" class="form-control" rows="10"></textarea>  
 
 					     		</div>
 
-					     		<div class="form-grpup">
+					     		<div class="form-group">
 					     			
 					     			<label>Kategori</label>
 					     			<input type="text" name="kategori" class="form-control">
 
 					     		</div>
 
-					     		<div class="form-grpup">
+					     		<div class="form-group">
 					     			
 					     			<label>Harga</label>
 					     			<input type="text" name="harga" class="form-control">
 
 					     		</div>
 
-					     		<div class="form-grpup">
+					     		<div class="form-group">
 					     			
 					     			<label>Jumlah Stok</label>
 					     			<input type="text" name="jumlah_stok" class="form-control">
@@ -131,10 +131,11 @@
 			      </div>
 			      <div class="modal-footer">
 
-			        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			        		<button type="submit" class="btn btn-primary">Tambah Produk</button>
+			      			<button type="submit" class="btn btn-secondary">Tambah Produk</button>
+			        		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 			      </div>
 			      </form>
 		</div>
 	  </div>
 	</div>
+

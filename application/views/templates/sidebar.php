@@ -4,7 +4,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -27,7 +27,7 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <div class="sidebar-heading">
+      <div class="sidebar-heading text-ligth">
         Etalase
       </div>
 
@@ -105,6 +105,11 @@
 
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
+          <span>Case Pc</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
           <span>CPU Cooler</span></a>
       </li>
 
@@ -140,9 +145,9 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <input type="text" class="form-control bg-light border-danger small" placeholder="Masukkan Nama Produk.." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
+                <button class="btn btn-danger" type="button">
                   <i class="fas fa-search fa-sm"></i>
                 </button>
               </div>

@@ -13,7 +13,7 @@
     
       <?php foreach ($etalase as $etl)  : ?>
 
-        <div class="card border-dark ml-3 mb-3" style="width: 16rem;">
+        <div class="card border-danger ml-3 mb-3" style="width: 16rem;">
           
                 <div class="card-body text-dark">
                     <span class="badge">New In Box</span>
@@ -22,8 +22,8 @@
                     <!--  <small>Deskripsi :</small><br><br>
                     <small><?php echo $etl->deskripsi ?></small><br><br> -->
                     <span>Rp <?php echo $etl->harga ?></span><br><br>
-                    <button type="button" class="btn btn-primary">Beli</button>
-                    <button type="button" class="btn btn-link">Detail</button>
+                    <button type="button" class="btn btn-danger">Beli</button>
+                    <button type="button" class="btn btn-link text-dark">Detail</button>
 
 
             </div>
