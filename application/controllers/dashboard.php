@@ -13,9 +13,9 @@
 			$this->load->view('templates/footer');
 		}
 
-		public function keranjang(){
+		public function keranjang($id_barang){
 
-			$etalase = $this->model_etalase->find($id_barang);
+			$etalase = $this->model_etalase->cari_id($id_barang);
 
 			$data = array(
 

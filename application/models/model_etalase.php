@@ -2,6 +2,7 @@
 
 
 		class model_etalase extends CI_Model{
+
 			public function tampil_barang(){
 
 
@@ -33,6 +34,23 @@
 				$this->db->delete($table);
 			}
 
+			public function cari_id($id_barang){
+
+				$result = $this->db->where('id_barang, id')
+								   ->limit(1)
+								   ->get('etalase');
+
+
+				if ($result->num_rows() > 0) {
+					
+						return $result->row();
+
+					}else{
+
+						return array();
+
+					}
+			}
 
 
 		}
