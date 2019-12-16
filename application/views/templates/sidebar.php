@@ -185,6 +185,7 @@
                           
                               <?php $keranjang = '<i class="fas fa-shopping-cart fa-lg text-danger"></i> : '.$this->cart->total_items(). ' Produk' ?>
                               <?php echo anchor('dashboard/tampil_keranjang', $keranjang) ?>
+                              
                         </li>
                       </ul>
             </div>
