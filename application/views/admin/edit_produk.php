@@ -38,7 +38,7 @@
 					     		<div class="form-group">
 					     			
 					     			<label>Harga</label>
-					     			<input type="text" name="harga" class="form-control" value="<?php echo $etl->harga ?>">
+					     			<input type="text" name="harga" class="form-control" value="Rp <?php echo number_format($etl->harga, 0, ',', '.') ?>">
 
 					     		</div>
 

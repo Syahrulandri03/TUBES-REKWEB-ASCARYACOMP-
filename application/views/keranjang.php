@@ -1,10 +1,10 @@
-<div class="container_fluid">
+<div class="container_fluid ml-3 mr-3">
 	
-			<h4>Keranjang Pesanan</h4>
+			<h3 class="text-center text-dark mb-3"><i class="fas fa-shopping-cart fa-lg text-danger"></i> Keranjang Pesanan</h3>
 
-		<table class="table table-bordered table-striped table-hover">
+		<table class="table table-bordered table-striped table-hover text-dark">
 			
-				<tr>
+				<tr class="text-center">
 
 					<th>No</th>
 					<th>Nama Produk</th>
@@ -18,15 +18,21 @@
 
 							<tr>
 								
-								<td><?php echo $no++ ?></td>
+								<td class="text-center"><?php echo $no++ ?></td>
 								<td><?php echo $produk['name'] ?></td>
-								<td><?php echo $produk['qty'] ?></td>
-								<td><?php echo $produk['price'] ?></td>
-								<td><?php echo $produk['subtotal'] ?></td>
+								<td class="text-center"><?php echo $produk['qty'] ?></td>
+								<td class="text-center">Rp <?php echo number_format($produk['price'], 0, ',', '.') ?></td>
+								<td class="text-center">Rp <?php echo number_format($produk['subtotal'], 0, ',', '.') ?></td>
 
 							</tr>
 
 					<?php endforeach; ?>
+
+
+					<tr class="text-center">
+							<td colspan="4">TOTAL : </td>
+							<td>Rp <?php echo number_format($this->cart->total(), 0, ',', '.') ?></td>
+					</tr>
 
 		</table>
 

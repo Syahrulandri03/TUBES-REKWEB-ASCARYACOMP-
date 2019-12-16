@@ -1,16 +1,18 @@
-<div class="container-fluid">
+<div class="container-fluid ">
 	
+		<h3 class="text-center text-dark mb-3"><i class="fas fa-table fa-lg text-danger"></i> Data Produk</h3>
+
 	<button class="btn btn-sm btn-danger mb-3" data-toggle="modal" data-target="#tambahProduk"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
 
-	 <table class="table table-bordered mb-5">
-		<thead class="thead-light text-center">
+	 <table class="table table-bordered table-hover mb-5">
+		<thead class="thead-dark text-center">
 			<tr>
 				
 				<th>No</th>
 				<th>Gambar</th>
 				<th>Nama Produk</th>
 				<th>Deskripsi</th>
-				<th>Kategori</th>
+				<th>Kategori</th> 
 				<th>Harga</th>
 				<th>Jumlah Stok</th>
 				<th colspan="3">Aksi</th>
@@ -20,14 +22,14 @@
 			
 		<?php $no=1; foreach ($etalase as $etl) : ?>
 
-				<tr>
+				<tr class="text-dark">
 					
 					<td> <?php  echo $no++ ?> </td>
 					<td> <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top"></td>
 					<td> <?php  echo $etl->nama_barang  ?> </td>
 					<td> <?php  echo $etl->deskripsi  ?> </td>
 					<td> <?php  echo $etl->kategori  ?> </td>
-					<td> <?php  echo $etl->harga  ?> </td>
+					<td>Rp <?php  echo number_format($etl->harga, 0, ',', '.') ?> </td>
 					<td> <?php  echo $etl->jumlah_stok  ?> </td>
 					<td><?php echo anchor('admin/etalase/edit_produk/' . $etl->id_barang, '<button type="button" class="btn btn-sm btn-secondary">Edit</button>') ?></td>
 					<td><?php echo anchor('admin/etalase/hapus_produk/' . $etl->id_barang, '<button type="button" class="btn btn-sm btn-danger">Hapus</button>') ?></td>

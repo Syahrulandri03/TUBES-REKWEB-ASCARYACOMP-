@@ -181,11 +181,11 @@
             <div class="navbar">
               
                       <ul class="nav navbar-nav navbar-right">        
-                        <li>
+                        <li class="text-dark">
                           
-                              <?php $keranjang = '<i class="fas fa-shopping-cart fa-lg text-danger"></i> : '.$this->cart->total_items(). ' Produk' ?>
+                              <?php $keranjang = '<i class="fas fa-shopping-cart fa-lg text-danger"></i> :<button type="button" class="btn btn-link text-dark">'.$this->cart->total_items(). ' Produk</button' ?>
                               <?php echo anchor('dashboard/tampil_keranjang', $keranjang) ?>
-                              
+
                         </li>
                       </ul>
             </div>
