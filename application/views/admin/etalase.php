@@ -2,7 +2,7 @@
 	
 		<h3 class="text-center text-dark mb-3"><i class="fas fa-table fa-lg text-danger"></i> Data Produk</h3>
 
-	<button class="btn btn-sm btn-danger mb-3" data-toggle="modal" data-target="#tambahProduk"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
+		<button class="btn btn-sm btn-danger mb-3" data-toggle="modal" data-target="#tambahProduk"><i class="fas fa-plus fa-sm"></i> Tambah Produk</button>
 
 	 <table class="table table-bordered table-hover mb-5">
 		<thead class="thead-dark text-center">

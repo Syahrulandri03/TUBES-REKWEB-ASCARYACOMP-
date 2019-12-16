@@ -36,4 +36,11 @@
 
 		</table>
 
+					<div>
+						
+							<a href="<?php echo base_url('dashboard/hapus_pesanan') ?>"><div class="btn btn-sm btn-danger mr-3"><i class="fas fa-trash"></i> Hapus Pesanan</div></a>
+							<a href="<?php echo base_url('dashboard/index') ?>"><div class="btn btn-sm btn-secondary mr-3"><i class="fas fa-plus fa-sm"></i> Tambah Pesanan</div></a>
+							<a href="<?php echo base_url('dashboard/pembayaran') ?>"><div class="btn btn-sm btn-secondary mr-3"><i class="fas fa-money-bill-wave"></i> Bayar Pesanan</div></a>
+
+					</div>
 </div>

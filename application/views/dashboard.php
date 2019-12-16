@@ -16,14 +16,14 @@
         <div class="card border-danger ml-3 mb-3" style="width: 16rem;">
           
                 <div class="card-body text-dark">
-                  
+
                     <span class="badge">New In Box</span>
                     <img src="<?php echo base_url().'/uploads/'.$etl->gambar ?>" class="card-img-top mb-3" alt="...">
                     <h6 class="card-title mb-1"><?php echo $etl->nama_barang ?></h6><br>
                     <!--  <small>Deskripsi :</small><br><br>
                     <small><?php echo $etl->deskripsi ?></small><br><br> -->
                     <span class="text-danger">Rp <?php echo number_format($etl->harga, 0, ',', '.') ?></span><br><br>
-                    <?php echo anchor('dashboard/keranjang/'. $etl->id_barang, '<button type="button" class="btn btn-danger">Beli</button>') ?>
+                    <?php echo anchor('dashboard/keranjang/'. $etl->id_barang, '<button type="button" class="btn btn-danger"><i class="fas fa-shopping-cart fa-lgr"></i> Beli</button>') ?>
                     <button type="button" class="btn btn-link text-dark">Detail</button>
 
             </div>
