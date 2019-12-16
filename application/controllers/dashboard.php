@@ -30,4 +30,13 @@
 
 			redirect('dashboard');
 		}
+
+	}
+
+		public function tampil_keranjang(){
+
+			$this->load->view('templates/header');
+			$this->load->view('templates/sidebar');
+			$this->load->view('keranjang');
+			$this->load->view('templates/footer');
 	}
