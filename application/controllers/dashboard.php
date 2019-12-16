@@ -13,20 +13,21 @@
 			$this->load->view('templates/footer');
 		}
 
-		public function keranjang($id_barang){
-
-			$etalase = $this->model_etalase->cari_id($id_barang);
+		public function keranjang($id){
+			
+			$etalase = $this->model_etalase->cari_id($id);
 
 			$data = array(
 
 					'id'		=> $etalase->id_barang,
 					'qty'		=> 1,
 					'price'		=> $etalase->harga,
-					'name'		=> $barang->nama_barang
+					'name'		=> $etalase->nama_barang
 
 			);
 
 			$this->cart->insert($data);
+
 			redirect('dashboard');
 		}
 	}

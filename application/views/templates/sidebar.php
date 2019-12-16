@@ -183,8 +183,8 @@
                       <ul class="nav navbar-nav navbar-right">        
                         <li>
                           
-                              <?php $keranjang = 'keranjang : '.this->cart->total_items(). 'items' ?>
-                              <?php echo $keranjang ?>
+                              <?php $keranjang = '<i class="fas fa-shopping-cart fa-lg text-danger"></i> : '.$this->cart->total_items(). ' Produk' ?>
+                              <?php echo anchor('dashboard/tampil_keranjang', $keranjang) ?>
                         </li>
                       </ul>
             </div>
