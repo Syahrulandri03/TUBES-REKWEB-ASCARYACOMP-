@@ -88,7 +88,7 @@
 								<div class="form-group">
 					     			
 					     			<label>Gambar</label><br>
-					     			<input type="file" name="gambar"class="form-control-file">
+					     			<input type="file" name="gambar" class="form-control-file">
 
 					     		</div>
 					     	

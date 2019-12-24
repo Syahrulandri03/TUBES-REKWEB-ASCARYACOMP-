@@ -27,8 +27,8 @@
 			);
 
 			$this->cart->insert($data);
-
 			redirect('dashboard');
+			
 		}
 
 		public function tampil_keranjang(){
@@ -37,6 +37,17 @@
 			$this->load->view('templates/sidebar');
 			$this->load->view('keranjang');
 			$this->load->view('templates/footer');
+		}
+
+		public function hapus_pesanan($no){
+
+			
+			$this->cart->remove($no);
+			redirect('dashboard/tampil_keranjang');
+
+			// $this->cart->destroy($no);
+
+			// redirect('dashboard');
 		}
 
 }

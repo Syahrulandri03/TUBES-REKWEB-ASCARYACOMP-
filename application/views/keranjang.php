@@ -2,7 +2,7 @@
 	
 			<h3 class="text-center text-dark mb-3"><i class="fas fa-shopping-cart fa-lg text-danger"></i> Keranjang Pesanan</h3>
 
-		<table class="table table-bordered table-striped table-hover text-dark">
+		<table class="table table-striped table-hover text-dark">
 			
 				<tr class="text-center">
 
@@ -11,6 +11,7 @@
 					<th>Jumlah</th>
 					<th>Harga</th>
 					<th>Total</th>
+					<th></th>
 
 				</tr>
 
@@ -23,7 +24,10 @@
 								<td class="text-center"><?php echo $produk['qty'] ?></td>
 								<td class="text-center">Rp <?php echo number_format($produk['price'], 0, ',', '.') ?></td>
 								<td class="text-center">Rp <?php echo number_format($produk['subtotal'], 0, ',', '.') ?></td>
+								<td><?php echo '<div class="btn btn-sm btn-danger mr-3"><i class="fas fa-trash"></i> Hapus Pesanan</div></a>'  ?></td> 
+								
 
+								
 							</tr>
 
 					<?php endforeach; ?>
@@ -38,7 +42,7 @@
 
 					<div>
 						
-							<a href="<?php echo base_url('dashboard/hapus_pesanan') ?>"><div class="btn btn-sm btn-danger mr-3"><i class="fas fa-trash"></i> Hapus Pesanan</div></a>
+							
 							<a href="<?php echo base_url('dashboard/index') ?>"><div class="btn btn-sm btn-secondary mr-3"><i class="fas fa-plus fa-sm"></i> Tambah Pesanan</div></a>
 							<a href="<?php echo base_url('dashboard/pembayaran') ?>"><div class="btn btn-sm btn-secondary mr-3"><i class="fas fa-money-bill-wave"></i> Bayar Pesanan</div></a>
 

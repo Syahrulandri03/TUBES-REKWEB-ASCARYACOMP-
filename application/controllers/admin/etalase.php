@@ -47,7 +47,7 @@
 							'jumlah_stok'	=> $jumlah_stok
 
 						);
-						
+					
 
 					$this->model_etalase->tambah_produk($data, 'etalase');
 					redirect('admin/etalase/index');
